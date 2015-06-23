@@ -20,15 +20,14 @@
 	<context:component-scan base-package="com.xc.forum.*.service" />
 	
 	<context:property-placeholder
-		location="classpath*:xinyunlian.properties,
-				  classpath*:dataSource.properties"
+		location="classpath*:dataSource.properties"
 		ignore-resource-not-found="true" ignore-unresolvable="true" />
 		
 	<aop:aspectj-autoproxy />
 		
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-		<property name="cacheSeconds" value="${message.cache_seconds}" />
+	<!-- 	<property name="cacheSeconds" value="${message.cache_seconds}" /> -->
 		<property name="useCodeAsDefaultMessage" value="true" />
 		<property name="basenames">
 			<list>
@@ -41,17 +40,17 @@
 
 	 <bean id="localeResolver"
 		class="org.springframework.web.servlet.i18n.FixedLocaleResolver">
-		<property name="defaultLocale" value="${locale}" />
+		<property name="defaultLocale" value="zh_CN" />
 	</bean> 
 	
 	<!-- <bean class="com.hengtiansoft.xyl.exception.SimpleMappingExceptionResolver">
 		<property name="defaultErrorView" value="${common.error.page}" />
 	</bean> -->
 	
-<bean class="com.hengtiansoft.xinyunlian.utils.SpringUtils" lazy-init="false"/>
+<bean class="com.xc.forum.utils.SpringUtils" lazy-init="false"/>
 	<!-- <import resource="classpath*:applicationContext-freemarker.xml" /> -->
 	<import resource="classpath*:applicationContext-persistence.xml" />
 	<!-- <import resource="classpath*:applicationContext-quartz.xml"/> -->
-	<import resource="classpath*:applicationContext-shiro.xml" />
+	<!-- <import resource="classpath*:applicationContext-shiro.xml" /> -->
 	<!-- <import resource="classpath*:applicationContext-cache.xml" /> -->
 </beans>

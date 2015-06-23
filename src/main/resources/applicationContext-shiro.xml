@@ -34,7 +34,6 @@
 
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 		<property name="realm" ref="authenticationRealm" />
-		<property name="cacheManager" ref="shiroCacheManager" />
 		<property name="sessionManager" ref="defaultWebSessionManager" />
 	</bean>
 	
