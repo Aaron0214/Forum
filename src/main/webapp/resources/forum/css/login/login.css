@@ -1,0 +1,93 @@
+body {
+	position: fixed;
+}
+label {
+	font-size:14px;
+	font-weight: bold;
+}
+input {
+	width: 209px;
+	height: 22px;
+}
+.main-box {
+	position: fixed;
+	left: 45%;
+	top: 25%;
+	width: 315px;
+	border: 2px solid #dedede;
+	height: 269px;
+	text-align: center;
+}
+.login-text {
+	margin-top:30px;
+}
+.login-logo {
+	position: fixed;
+	left: 100px;
+	padding: 35px 0px 0px;
+}
+.checkBox-box {
+	text-align: left;
+	margin-left: 50px;
+	margin-top: 10px;
+	color: #aaa
+}
+.checkBox {
+	width: 15px;
+}
+.username-box {
+	margin-top: 20px;
+	display: inline-block;
+	position: relative;
+}
+.username-box span {
+	display: inline-block;
+	width: 35px;
+	height: 24px;
+	background: url(../../images/login/username.png) no-repeat;
+	vertical-align: top;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+.input-username {
+	border: 1px solid #dedede;
+	vertical-align: top;
+	text-indent: 35px;
+}
+.password-box {
+	/*margin-left: 14px;*/
+	margin-top: 20px;
+	display: inline-block;
+	position: relative;
+}
+.password-box span{
+	display: inline-block;
+	width: 35px;
+	height: 24px;
+	background:url(../../images/login/pwd.png) no-repeat;
+	vertical-align: top;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+.input-password {
+	border: 1px solid #dedede;
+	vertical-align: top;
+	text-indent: 35px;
+}
+.login-button {
+	width: 214px;
+	height: 30px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	border: 0 solid #f15c00;
+	color: #fff;
+	padding: 8px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	background: rgb(255, 184, 0);
+	margin-top:10px;
+	margin-left: 50px;
+}
